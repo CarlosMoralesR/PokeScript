@@ -5,7 +5,7 @@ then
 	echo "No hay ningún parámetro"
 else
 
-	pokemon=$1
+	pokemon="${1,,?}"
 	if [ "$pokejson" == "Not Found" ]
 	then
 		echo "Nombre de pokemon incorrecto"
